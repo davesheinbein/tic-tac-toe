@@ -1,0 +1,105 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    background-color: salmon;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1 {
+    color: gold;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 1px;
+  }
+
+  /* Building the board vvv */
+  h2 {
+    color: black;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  td {
+    height: 100px;
+    width: 100px;
+  }
+  
+  td div {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+  tr td:nth-child(2) {
+    border-left: 4px solid grey;
+    border-right: 4px solid grey;
+  }
+  
+  tr:nth-child(2) td {
+    border-top: 4px solid grey;
+    border-bottom: 4px solid grey;
+  }
+
+  /* Building the board ^^^^ */
+
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* Buttons design vvv */
+  .button {
+    flex: 2fr;
+    margin-top: 1vh;
+    padding: 15px;
+    background-color: rgb(222, 140, 140);
+    color: rgb(10, 21, 27);
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+  }
+  /* Button Design on hover vvv */
+  .button:hover {
+    background-color: green;
+    color: black;
+  }
+
+  /* pulled from Connect 4 lab
+
+    #board {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 80vw;
+    height: 80vh;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+  }
+  
+
+  .cell {
+    background-color: plum;
+    border: 1px solid white;
+  }
+
+  #board div {
+    border-radius: 10%;
+    border: 1px solid grey;
+  } */
